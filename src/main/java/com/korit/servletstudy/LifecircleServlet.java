@@ -14,7 +14,7 @@ public class LifecircleServlet extends HttpServlet {
         System.out.println("객체 생성 및 초기화");
     }
 
-    @Override
+    @Override //서비스가 각각 객체를 호출함
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("서비스 실행");
     }
