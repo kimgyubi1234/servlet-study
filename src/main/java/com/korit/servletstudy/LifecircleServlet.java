@@ -9,12 +9,13 @@ import java.io.IOException;
 
 @WebServlet("/lifecircle")
 public class LifecircleServlet extends HttpServlet {
+
     @Override
     public void init() throws ServletException {
         System.out.println("객체 생성 및 초기화");
     }
 
-    @Override //서비스가 각각 객체를 호출함
+    @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("서비스 실행");
     }

@@ -31,7 +31,7 @@ class TestServlet {
     }
 }
 // 서비스 영역?
-public class TomcatMain extends HelloServlet{
+public class TomcatMain{
     public static void main(String[] args) {
         String requestUrl = "htt[://localhost:8080/backserver/first";
         TestServlet testServlet = TestServlet.getInstance();
