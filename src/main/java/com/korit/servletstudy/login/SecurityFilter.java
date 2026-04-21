@@ -20,7 +20,9 @@ public class SecurityFilter implements Filter {
         String uri = httpReq.getRequestURI();
         String progectNameIngnoreURI = uri.substring(uri.indexOf("/", 1));
 
-        if(progectNameIngnoreURI.startsWith("/api/auth")) {
+        if(progectNameIngnoreURI.startsWith("/api/auth") ||
+                progectNameIngnoreURI.startsWith("/api/html"))
+        {
             chain.doFilter(request, response); // 통과
             return;
         }

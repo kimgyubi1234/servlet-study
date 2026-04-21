@@ -26,7 +26,6 @@ public class UserController extends HttpServlet {
         List<User> users = userService.getAll(); //받은 모든 사용자 리스트 응답
         ResponseEntity.builder()
                 .status(200)
-                .body(users)
-                .response(resp);
+                .body(users);
     }
 }
